@@ -4,4 +4,4 @@ jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-      - uses: DaleSchool/calc-action@main
+      - uses: kossw123/calc-action@main
