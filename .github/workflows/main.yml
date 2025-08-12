@@ -1,7 +1,13 @@
 name: Our Workflow
 on: push
-jobs:
+jobs:     
   calculate:
     runs-on: ubuntu-latest
     steps:
-      - uses: kossw123/calc-action@main
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: same repository action
+        uses: ./.github/actions/my-action
+        with:
+            x: 12
+            y: 3 
